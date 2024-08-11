@@ -18,6 +18,8 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transform: scale(0.8);
     animation: zoomIn 1s ease-in-out forwards;
+    max-width: 90%;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -38,7 +40,7 @@ p {
 .heart {
     color: red;
     font-size: 2em;
-    animation: heartbeat 1.5s infinite; 
+    animation: heartbeat 1.5s infinite;
 }
 
 .footer {
@@ -103,4 +105,49 @@ p {
 
 .background span:nth-child(even) {
     animation-duration: 30s;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .heart {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .heart {
+        font-size: 1.2em;
+    }
+
+    .footer {
+        font-size: 0.7em;
+    }
 }
